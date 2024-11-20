@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Shop - Trendy & Stylish</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+</head>
+<body>
+    <!-- slide 1 start -->
+    <div class="toast" id="toast"></div>
+    <header>
+        <nav class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-store"></i>
+                Warung Iboo Kahel
+            </a>
+            <!-- navbar -->
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" onclick="showProducts()">
+                    <i class="fas fa-home"></i> Home    
+                </a>
+                <a href="#" onclick="showCart()">
+                    <i class="fas fa-shopping-cart"></i> Keranjang (<span id="cartCount">0</span>)
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- slide 1 end -->
+
+    <!-- slide 2 start -->
+    <div class="main-content">
+        
+
+        <div id="carouselExample" class="fade-in carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#productsSection">
+                <img src="1.jpg" alt="">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="#productsSection">
+                    <img src="2.jpg" alt="">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="#productsSection">
+                    <img src="3.jpg" alt="Image 3">
+                </a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" id="prevBtn">&#10094;</button>
+        <button class="carousel-control-next" id="nextBtn">&#10095;</button>
+    
+        <!-- Optional indicators -->
+        <div class="carousel-indicators" id="indicators"></div>
+        </div>
+
+            <!-- Cart Section -->
+            <div id="cartSection" class="cart-container" style="display: none;">
+                <h2><i class="fas fa-shopping-cart"></i> Your Shopping Cart</h2>
+                <div id="cartItems">
+                    <!-- Cart items will be added here -->
+                </div>
+                
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        Total: Rp <span id="cartTotal">0</span>
+                    </div>
+                </div>
+    
+                <div class="checkout-form">
+                    <h3><i class="fas fa-shipping-fast"></i> Shipping Information</h3><br>
+                    <input class="name" type="text" id="customerName" placeholder="Full Name" required><br>
+                    <input class="alamat" type="text" id="customerAddress" placeholder="Complete Address" required><br>
+                    <button class="checkout-button" onclick="checkoutToWhatsApp()">
+                        <i class="fab fa-whatsapp"></i>
+                        Checkout via WhatsApp
+                    </button>
+                </div>
+            </div>      
+        </div>
+            </div>
+            <!-- slide2 end -->
+            <div class="slide4">
+            <!-- Products Section -->
+            <div id="productsSection">
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products will be added here -->
+                </div>
+            </div>
+            </div>
+            <div id="mie-description" class="description-page fade-in">
+                <div class="description-content">
+                    <span class="close-btn" onclick="hideDescription('mie')">×</span>
+                    <h2>MIE JEBEWW</h2>
+                    <P>Mie kenyal dengan cita rasa khas, disajikan dengan bumbu yang menggugah selera. Cocok untuk penggemar mie yang suka sensasi rasa yang kuat dan menggoda.</P>
+                </div>
+            </div>
+            <div id="pangsitOil-description" class="description-page fade-in">
+                <div class="description-content">
+                    <span class="close-btn" onclick="hideDescription('pangsitOil')">×</span>
+                    <h2>Pangsit chili Oil  12k isi 5</h2>
+                    <P>Pangsit rasa pedas dari chili oil yang memberikan sensasi hangat dan gurih. Cocok untuk Anda yang menyukai hidangan pedas dengan tekstur renyah.</P>
+                </div>
+            </div>
+            <div id="PangsitGoreng-description" class="description-page fade-in">
+                <div class="description-content">
+                    <span class="close-btn" onclick="hideDescription('PangsitGoreng')">×</span>
+                    <h2>Pangsit Goreng 12k Isi 4</h2>
+                    <P>Pangsit yang digoreng hingga renyah, dengan isian daging yang gurih dan lezat. Sajian yang sempurna untuk camilan atau pendamping hidangan utama.</P>
+                </div>
+            </div>
+            <div id="PangsitSayur-description" class="description-page fade-in">
+                <div class="description-content">
+                    <span class="close-btn" onclick="hideDescription('PangsitSayur')">×</span>
+                    <h2>Pangsit Sayur 17k Isi 5</h2>
+                    <P>Pangsit yang berisi sayuran segar, memberikan pilihan yang lebih sehat namun tetap lezat. Cocok untuk Anda yang menginginkan camilan bergizi dengan rasa yang nikmat.</P>
+                </div>
+            </div>
+            <!--footer start -->
+        <footer>
+            <div>
+                <a href="https://maps.app.goo.gl/HEvEznaVzHXZZqvn7">Alamat</a>
+                <a href="https://wa.me/6288291045579">Kontak</a>
+                <a href="404_not_found">Kebijakan Privasi</a>
+                <a href="404_not_found">Syarat & Ketentuan</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Toko E-Commerce Kami. Semua hak dilindungi.</p>
+            </div>
+            </footer>
+            
+    <script src="script.js"></script>
+</body>
+</html>
